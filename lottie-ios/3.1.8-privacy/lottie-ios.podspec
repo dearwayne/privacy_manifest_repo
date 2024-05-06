@@ -27,20 +27,19 @@ For the first time, designers can create and ship beautiful animations without a
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
 
-  s.source_files = 'Sources/**/*.swift'
-  s.resource_bundles = {
-    'LottiePrivacyInfo' => ['Sources/PrivacyInfo.xcprivacy'],
-  }
-
-  s.ios.source_files = 'Sources/iOS/*.swift'
-  s.ios.exclude_files = 'Sources/src/Public/MacOS/**/*'
-  s.tvos.exclude_files = 'Sources/src/Public/MacOS/**/*'
-  s.osx.exclude_files = 'Sources/src/Public/iOS/**/*'
-
+  s.source_files = 'lottie-swift/src/**/*'
+  s.ios.source_files = 'lottie-swift/iOS/*.swift'
+  s.ios.exclude_files = 'lottie-swift/src/Public/MacOS/**/*'
+  s.tvos.exclude_files = 'lottie-swift/src/Public/MacOS/**/*'
+  s.osx.exclude_files = 'lottie-swift/src/Public/iOS/**/*'
 
   s.ios.frameworks = ['UIKit', 'CoreGraphics', 'QuartzCore']
   s.tvos.frameworks = ['UIKit', 'CoreGraphics', 'QuartzCore']
   s.osx.frameworks = ['AppKit', 'CoreGraphics', 'QuartzCore']
   s.module_name = 'Lottie'
   s.header_dir = 'Lottie'
+
+  s.resource_bundles = {
+    'LottiePrivacyInfo' => ['Sources/PrivacyInfo.xcprivacy']
+  }
 end
