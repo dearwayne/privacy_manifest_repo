@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source       =  {
     :git => 'https://github.com/dearwayne/Reachability.swift.git',
-    :tag => 'v'+s.version
+    :tag => '5.0.0-privacy'
   }
   s.source_files = 'Sources/Reachability.swift'
   s.resource_bundles = {"ReachabilitySwift" => ["Sources/PrivacyInfo.xcprivacy"]}
